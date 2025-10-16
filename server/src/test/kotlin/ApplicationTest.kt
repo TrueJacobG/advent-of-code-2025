@@ -1,5 +1,6 @@
 package com.github.truejacobg
 
+import com.github.truejacobg.aoc.module
 import io.ktor.client.request.*
 import io.ktor.http.*
 import io.ktor.server.testing.*
