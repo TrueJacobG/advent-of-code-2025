@@ -5,6 +5,6 @@ plugins {
 }
 
 subprojects {
-    group = "com.github.truejacobg"
+    group = "com.github.truejacobg.aoc"
     version = "0.0.1"
 }

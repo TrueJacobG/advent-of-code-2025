@@ -9,20 +9,7 @@ plugins {
 }
 
 application {
-    mainClass = "com.github.truejacobg.ApplicationKt"
-}
-
-tasks.withType<ProcessResources> {
-    val wasmOutput = file("../web/build/dist/wasmJs/productionExecutable")
-    if (wasmOutput.exists()) {
-        inputs.dir(wasmOutput)
-    }
-
-    from("../web/build/dist/wasmJs/productionExecutable") {
-        into("web")
-        include("**/*")
-    }
-    duplicatesStrategy = DuplicatesStrategy.WARN
+    mainClass = "com.github.truejacobg.aoc.ApplicationKt"
 }
 
 dependencies {
